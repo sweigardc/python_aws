@@ -39,7 +39,7 @@ def index(request):
             .aws {
                 margin-top: 1.5em;
                 font-size: 1rem;
-                color: #ff9900;
+                color: black;
                 font-weight: bold;
                 letter-spacing: 1px;
             }
