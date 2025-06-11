@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:923119275177:task-definition/python-demo:7",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:923119275177:task-definition/python-demo:8",
     "containerDefinitions": [
         {
             "name": "python-demo",
-            "image": "923119275177.dkr.ecr.us-east-1.amazonaws.com/python-server-demo-private:c845d6c4ac2c5a4b114da30236ef7031dac4ca30",
+            "image": "923119275177.dkr.ecr.us-east-1.amazonaws.com/python-server-demo-private:662760ee67aa616bc420afd514a2ccf1b8cdf79f",
             "cpu": 0,
             "portMappings": [
                 {
@@ -27,8 +27,7 @@
                     "max-buffer-size": "25m",
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
-                },
-                "secretOptions": []
+                }
             },
             "systemControls": []
         }
@@ -36,7 +35,7 @@
     "family": "python-demo",
     "executionRoleArn": "arn:aws:iam::923119275177:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 7,
+    "revision": 8,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -82,7 +81,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2025-06-11T14:44:18.846Z",
-    "registeredBy": "arn:aws:iam::923119275177:root",
+    "registeredAt": "2025-06-11T20:49:30.008Z",
+    "registeredBy": "arn:aws:iam::923119275177:user/Github",
     "tags": []
 }
