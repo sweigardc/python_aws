@@ -1,25 +1,23 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:923119275177:task-definition/python-demo:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:923119275177:task-definition/python-demo:7",
     "containerDefinitions": [
         {
             "name": "python-demo",
-            "image": "923119275177.dkr.ecr.us-east-1.amazonaws.com/python-server-demo-private:latest",
+            "image": "923119275177.dkr.ecr.us-east-1.amazonaws.com/python-server-demo-private:c845d6c4ac2c5a4b114da30236ef7031dac4ca30",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "python-demo-80-tcp",
-                    "containerPort": 80,
-                    "hostPort": 80,
+                    "name": "python-demo-8000-tcp",
+                    "containerPort": 8000,
+                    "hostPort": 8000,
                     "protocol": "tcp",
                     "appProtocol": "http"
                 }
             ],
             "essential": true,
             "environment": [],
-            "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "ulimits": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -38,7 +36,7 @@
     "family": "python-demo",
     "executionRoleArn": "arn:aws:iam::923119275177:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 7,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -78,13 +76,13 @@
     "requiresCompatibilities": [
         "FARGATE"
     ],
-    "cpu": "512",
-    "memory": "1024",
+    "cpu": "1024",
+    "memory": "3072",
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2025-06-10T20:18:22.504Z",
+    "registeredAt": "2025-06-11T14:44:18.846Z",
     "registeredBy": "arn:aws:iam::923119275177:root",
     "tags": []
 }

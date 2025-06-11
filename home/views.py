@@ -36,19 +36,12 @@ def index(request):
                 font-size: 1.25rem;
                 color: #444;
             }
-            .aws {
-                margin-top: 1.5em;
-                font-size: 1rem;
-                color: black;
-                font-weight: bold;
-                letter-spacing: 1px;
-            }
         </style>
     </head>
     <body>
         <div class="container">
             <h1>Welcome!</h1>
-            <p>This is a demonstration of <strong>Python</strong> and <strong>Django</strong> deployed on <span class="aws">AWS</span>.</p>
+            <p>This is a demonstration of <strong>Python</strong> and <strong>Django</strong> deployed on <strong>AWS</strong>.</p>
         </div>
     </body>
     </html>
